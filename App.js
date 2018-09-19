@@ -9,6 +9,8 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import { StyledText } from './lib/StyledText';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -21,6 +23,11 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <StyledText 
+          text="Welcome to React Native <b>Styled Text</b> demo!"
+          style={styles.welcome}
+          textStyles={textStyles}
+        />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
@@ -47,3 +54,10 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+const textStyles = StyleSheet.create({
+  b: {
+    fontWeight: 'bold',
+    color: '#22AA44',
+  }
+})
