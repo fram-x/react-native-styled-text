@@ -8,7 +8,7 @@
 ## Introduction
 The purpose of this library is to support easy rendering of mixed text styles.
 
-<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example.png" width="300">
+<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example.png" width="400">
 
 The library implements a `StyledText` component taking an HTML-like text and a styles object as input properties.
 
@@ -97,7 +97,7 @@ const textStyles = StyleSheet.create({
 
 Renders as
 
-<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/welcome.png" width="200">
+<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/welcome.png" width="280">
 
 
 ## API
