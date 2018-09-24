@@ -56,3 +56,5 @@ buck-out/
 *.jsbundle
 /coverage
 /.vscode/.react
+/lib/LICENSE
+/lib/README.md
