@@ -24,7 +24,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <StyledText 
-          text="Welcome to <b>React Native <demo>Styled Text</demo></b> demo!"
+          text="Welcome to <b><u>React Native</u> <demo>Styled Text</demo></b> demo!"
           style={styles.welcome}
           textStyles={textStyles}
         />
@@ -40,7 +40,7 @@ export default class App extends Component<Props> {
             textStyles={jsxStyles}
           />
           <StyledText
-            text={'text<eq>=</eq><string>"Happy &lt;b&gt;Styling&lt;/b&gt;!"'}
+            text={'text<eq>=</eq><string>"Ha&lt;i&gt;pp&lt;/i&gt;y &lt;b&gt;Styling&lt;/b&gt;!"'}
             style={[styles.jsx, styles.jsxProp]}
             textStyles={jsxStyles}
           />
@@ -56,7 +56,7 @@ export default class App extends Component<Props> {
           />
         </View>
         <StyledText
-          text="Happy <b>Styling</b>!"
+          text="Ha<i>pp</i>y <b>Styling</b>!"
           style={styles.header}
         />
       </View>
@@ -71,21 +71,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 16,
     textAlign: 'center',
-    padding: 30,
+    padding: 10,
   },
   instruction: {
-    fontSize: 18,
+    fontSize: 14,
     textAlign: 'left',
     color: '#333333',
-    padding: 30,
+    padding: 10,
   },
   header: {
-    fontSize: 24,
+    fontSize: 20,
     color: 'orange',
     textAlign: 'center',
-    padding: 30,
+    padding: 10,
   },
   jsxContainer: {
     backgroundColor: '#333',
@@ -93,14 +93,14 @@ const styles = StyleSheet.create({
   },
   jsx: {
     textAlign: 'left',
-    paddingLeft: 20,
+    paddingLeft: 10,
     paddingVertical: 4,
     fontWeight: '500',
-    fontSize: 18,
+    fontSize: 12,
     fontFamily: 'courier',
   },
   jsxProp: {
-    paddingLeft: 40,
+    paddingLeft: 25,
     color: '#8EDDFF',
   },
 });
@@ -110,7 +110,7 @@ const textStyles = StyleSheet.create({
     textShadowOffset: { width: 2, height: 2 },
     textShadowColor: '#555555',
     textShadowRadius: 6,
-    fontSize: 24,
+    fontSize: 18,
     fontStyle: 'italic',
     color: '#22AA44',
   },

@@ -8,7 +8,8 @@
 ## Introduction
 The purpose of this library is to support easy rendering of mixed text styles.
 
-<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example.png" width="400">
+<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example-ios.png" width="400" />
+<img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example-android.png" width="400" />
 
 The library implements a `StyledText` component taking an HTML-like text and a styles object as input properties.
 
@@ -28,6 +29,7 @@ For simple styling `StyledText` supports some predefined styles:
 
 * b: **bold**
 * i: *italic*
+* u: underline
 
 Example:
 
@@ -115,6 +117,7 @@ The following default styles are defined:
 | ---- | ----------- |
 | b | **bold** |
 | i | *italic* |
+| u | underline |
 
 
 
