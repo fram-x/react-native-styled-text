@@ -24,7 +24,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <StyledText 
-          text="Welcome to <b><u>React Native</u> <demo>Styled Text</demo></b> demo!"
+          text="Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
           style={styles.welcome}
           textStyles={textStyles}
         />
@@ -111,7 +111,6 @@ const textStyles = StyleSheet.create({
     textShadowColor: '#555555',
     textShadowRadius: 6,
     fontSize: 18,
-    fontStyle: 'italic',
     color: '#22AA44',
   },
   code: {
