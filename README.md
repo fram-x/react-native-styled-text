@@ -39,7 +39,7 @@ import { StyledText } from 'react-native-styled-text';
 
 ...
   <StyledText
-    text="Happy <b>Styling</b>!"
+    text="Ha<i>pp</i>y <b>Styling</b>!"
     style={styles.header}
   />
 ...
@@ -70,7 +70,7 @@ import { StyledText } from 'react-native-styled-text';
 
 ...
   <StyledText 
-    text="Welcome to <b>React Native <demo>Styled Text</demo></b> demo!"
+    text="Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
     style={styles.welcome}
     textStyles={textStyles}
   />
@@ -90,7 +90,6 @@ const textStyles = StyleSheet.create({
     textShadowColor: '#555555',
     textShadowRadius: 6,
     fontSize: 24,
-    fontStyle: 'italic',
     color: '#22AA44',
   },
 });
