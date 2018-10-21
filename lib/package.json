@@ -1,6 +1,6 @@
 {
 	"name": "react-native-styled-text",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "A React Native component for easy rendering of styled text.",
 	"main": "./index.js",
 	"scripts": {
@@ -15,7 +15,14 @@
 		"style",
 		"format",
 		"text",
-		"mixed"
+		"mixed",
+		"font",
+		"bold",
+		"italic",
+		"color",
+		"html",
+		"css",
+		"nested"
 	  ],
 	"author": "Bjørn Egil Hansen",
 	"license": "MIT",
