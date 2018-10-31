@@ -24,7 +24,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <StyledText 
-          text="Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
+          text="Welcome to <b>React <u>Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
           style={styles.welcome}
           textStyles={textStyles}
         />
