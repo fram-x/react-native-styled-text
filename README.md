@@ -60,7 +60,7 @@ Renders as
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/happyStyling.png" width="200">
 
 ### Using custom styles
-For richer styling, you set the `textStyles` property of `StyledText` to an object (`StyleSheet`) containing your custom text styles and apply the styles in the `text` property.
+For richer styling, you set the `textStyles` property of `StyledText` to an object (e.g. `StyleSheet`) containing your custom text styles and apply these styles in the `text` property.
 
 Example:
 
@@ -100,15 +100,37 @@ Renders as
 
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/welcome.png" width="280">
 
+## How it works
+
+Internally, the `render` function of `StyledText` parses the value of the `text` property and returns a nested structure of React Native [`Text`](https://facebook.github.io/react-native/docs/text) components.
+
+From the example above:
+
+```javascript
+  <StyledText
+    text="Ha<i>pp</i>y <b>Styling</b>!"
+    style={styles.header}
+  />
+```
+would be transformed to:
+
+```javascript
+  <Text 
+    style={styles.header}
+  >Ha<Text style={defaultStyles.i}>pp</Text>y <Text style={defaultStyles.b}>Styling</Text>!
+  </Text>
+```
+
+So `StyledText` just provides a more compact, readable and flexible coding of nested `Text` components. 
+
 
 ## API
-`StyledText` exposes the following properties:
+In addition to the React Native `Text` properties, `StyledText` supports the following properties:
 
 | Name | Description |
 | ---- | ----------- |
 | text | String with style tags for mixed styling of the text. Each style tag must match one of the styles provided in textStyles or one of the default styles, see below. |
-| style | Base style for the component, typically including layout properties. (Optional) |
-| textStyles | Object (`StyleSheet`) containing definition of the styles used in the provided text. (Optional) |
+| textStyles | Object (e.g. `StyleSheet`) containing definition of the styles used in the provided text. (Optional) |
 
 The following default styles are defined:
 
