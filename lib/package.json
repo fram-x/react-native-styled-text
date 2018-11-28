@@ -1,6 +1,6 @@
 {
 	"name": "react-native-styled-text",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "A React Native component for easy rendering of styled text.",
 	"main": "./index.js",
 	"scripts": {
