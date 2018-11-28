@@ -35,7 +35,7 @@ Example:
 
 ```javascript
 import { StyleSheet } from 'react-native';
-import { StyledText } from 'react-native-styled-text';
+import StyledText from 'react-native-styled-text';
 
 ...
   <StyledText
@@ -66,7 +66,7 @@ Example:
 
 ```javascript
 import { StyleSheet } from 'react-native';
-import { StyledText } from 'react-native-styled-text';
+import StyledText from 'react-native-styled-text';
 
 ...
   <StyledText 
