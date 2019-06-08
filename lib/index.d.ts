@@ -8,7 +8,7 @@ export interface Props extends TextProps {
      * where the style tags must be either one of the predefined tags: `<b>`, `<i>` or `<u>`
      * or refer to custom styles defined in the textStyles property, e.g. `<demo>`
      */
-    text?: string;
+    children?: string;
     /**
      * Custom styles which may be used as style tags in the text property
      */

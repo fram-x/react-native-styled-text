@@ -24,10 +24,11 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <StyledText 
-          text="Welcome to <b>React <u>Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
           style={styles.welcome}
           textStyles={textStyles}
-        />
+        >
+          {"Welcome to <b>React <u>Native</u> <demo><i>Styled</i> Text</demo></b> demo!"}
+        </StyledText>
         <StyledText 
           text="Run <code>yarn add react-native-styled-text</code> to install"
           style={styles.instruction}
@@ -35,25 +36,29 @@ export default class App extends Component<Props> {
         />
         <View style={styles.jsxContainer}>
           <StyledText
-            text={'<ltgt>&lt;</ltgt><comp>StyledText</comp>'}
             style={styles.jsx}
             textStyles={jsxStyles}
-          />
+          >
+            {'<ltgt>&lt;</ltgt><comp>StyledText</comp>'}
+          </StyledText>
           <StyledText
-            text={'text<eq>=</eq><string>"Ha&lt;i&gt;pp&lt;/i&gt;y &lt;b&gt;Styling&lt;/b&gt;!"'}
             style={[styles.jsx, styles.jsxProp]}
             textStyles={jsxStyles}
-          />
+          >
+            {'text<eq>=</eq><string>"Ha&lt;i&gt;pp&lt;/i&gt;y &lt;b&gt;Styling&lt;/b&gt;!"'}
+          </StyledText>
           <StyledText
-            text={"style<eq>=</eq><brace>{</brace>styles.header<brace>}</brace>"}
             style={[styles.jsx, styles.jsxProp]}
             textStyles={jsxStyles}
-          />
+          >
+            {"style<eq>=</eq><brace>{</brace>styles.header<brace>}</brace>"}
+          </StyledText>
           <StyledText
-            text="<ltgt>/></ltgt>"
             style={styles.jsx}
             textStyles={jsxStyles}
-          />
+          >
+            {'<ltgt>&lt;</ltgt></comp>StyledText</comp><ltgt>></ltgt>'}
+          </StyledText>
         </View>
         <StyledText
           text="Ha<i>pp</i>y <b>Styling</b>!"
