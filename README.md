@@ -11,7 +11,7 @@ The purpose of this library is to support easy rendering of mixed text styles.
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example-ios.png" width="400" />
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example-android.png" width="400" />
 
-The library implements a `StyledText` component taking an HTML-like text and a styles object as input properties.
+The library implements a `StyledText` component taking an HTML-like string in the `children` property and an optional text styles property.
 
 ## Installation
 To install the library into your project, run yarn or npm:
@@ -39,9 +39,10 @@ import StyledText from 'react-native-styled-text';
 
 ...
   <StyledText
-    text="Ha<i>pp</i>y <b>Styling</b>!"
     style={styles.header}
-  />
+  >
+    {"Ha<i>pp</i>y <b>Styling</b>!"}
+  </StyledText>    
 ...
 
 const styles = StyleSheet.create({
@@ -70,10 +71,11 @@ import StyledText from 'react-native-styled-text';
 
 ...
   <StyledText 
-    text="Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!"
     style={styles.welcome}
     textStyles={textStyles}
-  />
+  >
+    {"Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!"}
+  </StyledText>
 ...
 
 const styles = StyleSheet.create({
@@ -102,15 +104,16 @@ Renders as
 
 ## How it works
 
-Internally, the `render` function of `StyledText` parses the value of the `text` property and returns a nested structure of React Native [`Text`](https://facebook.github.io/react-native/docs/text) components.
+Internally, the `render` function of `StyledText` parses the value of the `children` property, which must be a string, and returns a nested structure of React Native [`Text`](https://facebook.github.io/react-native/docs/text) components.
 
 From the example above:
 
 ```javascript
   <StyledText
-    text="Ha<i>pp</i>y <b>Styling</b>!"
     style={styles.header}
-  />
+  >
+    {"Ha<i>pp</i>y <b>Styling</b>!"}
+  </StyledText>
 ```
 would be transformed to:
 
@@ -125,11 +128,12 @@ So `StyledText` just provides a more compact, readable and flexible coding of ne
 
 
 ## API
-In addition to the React Native `Text` properties, `StyledText` supports the following properties:
+
+In addition to the React Native `Text` properties, `StyledText` supports the following properties, with a restriction on the `children` proerty:
 
 | Name | Description |
 | ---- | ----------- |
-| text | String with style tags for mixed styling of the text. Each style tag must match one of the styles provided in textStyles or one of the default styles, see below. |
+| children | String with style tags for mixed styling of the text. Each style tag must match one of the styles provided in textStyles or one of the default styles, see below. (Optional) |
 | textStyles | Object (e.g. `StyleSheet`) containing definition of the styles used in the provided text. (Optional) |
 
 The following default styles are defined:

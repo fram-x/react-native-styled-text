@@ -1,6 +1,6 @@
 {
-	"eslint.enable": true,
-	"eslint.autoFixOnSave": true,
+	// "eslint.enable": true,
+	// "eslint.autoFixOnSave": true,
 	// For flow
 	"flow.runOnAllFiles": true,
 	"flow.useNPMPackagedFlow": true,

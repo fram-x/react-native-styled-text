@@ -8,7 +8,7 @@ export interface Props extends TextProps {
      * where the style tags must be either one of the predefined tags: `<b>`, `<i>` or `<u>`
      * or refer to custom styles defined in the textStyles property, e.g. `<demo>`
      */
-    text?: string;
+    children?: string;
     /**
      * Custom styles which may be used as style tags in the text property
      */
@@ -16,7 +16,12 @@ export interface Props extends TextProps {
 }
 
 /**
- * Use StyledText for shorthand mixing of text styles in a text element with an HTML-like notation.
+ * Use StyledText for shorthand mixing of text styles with an HTML-like notation.
+ * 
+ * children should be an HTML-like text containing style tags
+ * e.g., `Welcome to <b><u>React Native</u> <demo><i>Styled</i> Text</demo></b> demo!`
+ * where the style tags must be either one of the predefined tags: `<b>`, `<i>` or `<u>`
+ * or refer to custom styles defined in the textStyles property, e.g. `<demo>`
  */
 declare class StyledText extends React.PureComponent<Props> {}
 

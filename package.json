@@ -1,27 +1,24 @@
 {
   "name": "react-native-styled-text-ex",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest --coverage --watchAll"
   },
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "16.5.0",
-    "react-native": "0.57.0"
+    "react": "16.8.3",
+    "react-native": "0.59.9"
   },
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.45.3",
-    "react-test-renderer": "16.5.0"
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
   },
   "jest": {
-    "preset": "react-native",
-    "transform": {
-      "^.+\\.js$": "./node_modules/react-native/jest/preprocessor.js"
-    }
+    "preset": "react-native"
   }
 }
