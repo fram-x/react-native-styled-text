@@ -13,6 +13,10 @@ The purpose of this library is to support easy rendering of mixed text styles.
 
 The library implements a `StyledText` component taking an HTML-like string in the `children` property and an optional text styles property.
 
+## Try it out
+
+Online demo on [expo.io](https://snack.expo.io/@bjornegil/styledtext-demo)
+
 ## Installation
 To install the library into your project, run yarn or npm:
 
