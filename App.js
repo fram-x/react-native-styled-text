@@ -30,10 +30,11 @@ export default class App extends Component<Props> {
           {"Welcome to <b>React <u>Native</u> <demo><i>Styled</i> Text</demo></b> demo!"}
         </StyledText>
         <StyledText 
-          text="Run <code>yarn add react-native-styled-text</code> to install"
           style={styles.instruction}
           textStyles={textStyles}
-        />
+        >
+          {"Run <code>yarn add react-native-styled-text</code> to install"}
+        </StyledText>
         <View style={styles.jsxContainer}>
           <StyledText
             style={styles.jsx}
@@ -45,25 +46,32 @@ export default class App extends Component<Props> {
             style={[styles.jsx, styles.jsxProp]}
             textStyles={jsxStyles}
           >
-            {'text<eq>=</eq><string>"Ha&lt;i&gt;pp&lt;/i&gt;y &lt;b&gt;Styling&lt;/b&gt;!"'}
-          </StyledText>
-          <StyledText
-            style={[styles.jsx, styles.jsxProp]}
-            textStyles={jsxStyles}
-          >
             {"style<eq>=</eq><brace>{</brace>styles.header<brace>}</brace>"}
           </StyledText>
           <StyledText
             style={styles.jsx}
             textStyles={jsxStyles}
           >
-            {'<ltgt>&lt;</ltgt></comp>StyledText</comp><ltgt>></ltgt>'}
+            {'<ltgt>></ltgt>'}
+          </StyledText>
+          <StyledText
+            style={[styles.jsx, styles.jsxProp]}
+            textStyles={jsxStyles}
+          >
+            {'<brace>{</brace><string>"Ha&lt;i&gt;pp&lt;/i&gt;y &lt;b&gt;Styling&lt;/b&gt;!"<brace>}</brace>'}
+          </StyledText>
+          <StyledText
+            style={styles.jsx}
+            textStyles={jsxStyles}
+          >
+            {'<ltgt>&lt;\/</ltgt><comp>StyledText</comp><ltgt>></ltgt>'}
           </StyledText>
         </View>
         <StyledText
-          text="Ha<i>pp</i>y <b>Styling</b>!"
           style={styles.header}
-        />
+        >
+          {"Ha<i>pp</i>y <b>Styling</b>!"}
+        </StyledText>
       </View>
     );
   }
@@ -99,9 +107,10 @@ const styles = StyleSheet.create({
   jsx: {
     textAlign: 'left',
     paddingLeft: 10,
-    paddingVertical: 4,
+    paddingVertical: 0,
     fontWeight: '500',
     fontSize: 12,
+    
     fontFamily: 'courier',
   },
   jsxProp: {
