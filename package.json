@@ -1,10 +1,10 @@
 {
-  "name": "reactnativestyledtext",
-  "version": "0.0.1",
+  "name": "react-native-styled-text-ex",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest --coverage --watchAll"
   },
   "dependencies": {
     "react": "16.8.3",
