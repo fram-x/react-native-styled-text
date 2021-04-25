@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Improved release procedure
+
 ## 1.0.3
 
 - Improved release procedure

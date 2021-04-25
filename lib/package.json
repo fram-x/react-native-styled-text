@@ -1,12 +1,11 @@
 {
   "name": "react-native-styled-text",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React Native component for easy rendering of styled text.",
   "main": "./index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "version": "git add -A . && git commit -m 'Version update'",
-    "postversion": "git push && git push --tags"
+    "version": "git add -A . && git commit -m 'Version update'"
   },
   "repository": {
     "type": "git",
