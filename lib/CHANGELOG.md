@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Automated pull request fixing a security vulnerability.
+
 ## 1.0.4
 
 - Improved release procedure
