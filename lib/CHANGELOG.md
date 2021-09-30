@@ -1,6 +1,7 @@
-## 1.0.7
+## 1.1.0
 
 - Automated pull request fixing a security vulnerabilities.
+- Upgraded packages
 
 ## 1.0.6
 
