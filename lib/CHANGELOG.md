@@ -1,3 +1,12 @@
+## 1.1.0
+
+- Automated pull request fixing a security vulnerabilities.
+- Upgraded packages
+
+## 1.0.6
+
+- Automated pull request fixing a security vulnerability.
+
 ## 1.0.5
 
 - Automated pull request fixing a security vulnerability.
