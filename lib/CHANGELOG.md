@@ -1,3 +1,7 @@
+## 1.1.1
+
+- Fixed version/release tag mismatch
+
 ## 1.1.0
 
 - Automated pull request fixing a security vulnerabilities.
