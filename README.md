@@ -6,6 +6,7 @@
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 
 ## Introduction
+
 The purpose of this library is to support easy rendering of mixed text styles.
 
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/example-ios.png" width="400" />
@@ -15,9 +16,10 @@ The library implements a `StyledText` component taking an HTML-like string in th
 
 ## Try it out
 
-Online demo on [expo.io](https://snack.expo.io/@bjornegil/styledtext-demo)
+Online demo on [expo.io](https://snack.expo.io/@bjorn.egil/styledtext-demo)
 
 ## Installation
+
 To install the library into your project, run yarn or npm:
 
 `yarn add react-native-styled-text`
@@ -29,11 +31,12 @@ or
 ## Examples
 
 ### Using default styles
-For simple styling `StyledText` supports some predefined styles: 
 
-* b: **bold**
-* i: *italic*
-* u: underline
+For simple styling `StyledText` supports some predefined styles:
+
+- b: **bold**
+- i: _italic_
+- u: underline
 
 Example:
 
@@ -46,7 +49,7 @@ import StyledText from 'react-native-styled-text';
     style={styles.header}
   >
     {"Ha<i>pp</i>y <b>Styling</b>!"}
-  </StyledText>    
+  </StyledText>
 ...
 
 const styles = StyleSheet.create({
@@ -65,6 +68,7 @@ Renders as
 <img src="https://github.com/fram-x/react-native-styled-text/raw/develop/docs/happyStyling.png" width="200">
 
 ### Using custom styles
+
 For richer styling, you set the `textStyles` property of `StyledText` to an object (e.g. `StyleSheet`) containing your custom text styles and apply these styles in the `text` property.
 
 Example:
@@ -74,7 +78,7 @@ import { StyleSheet } from 'react-native';
 import StyledText from 'react-native-styled-text';
 
 ...
-  <StyledText 
+  <StyledText
     style={styles.welcome}
     textStyles={textStyles}
   >
@@ -113,45 +117,41 @@ Internally, the `render` function of `StyledText` parses the value of the `child
 From the example above:
 
 ```javascript
-  <StyledText
-    style={styles.header}
-  >
-    {"Ha<i>pp</i>y <b>Styling</b>!"}
-  </StyledText>
+<StyledText style={styles.header}>{'Ha<i>pp</i>y <b>Styling</b>!'}</StyledText>
 ```
+
 would be transformed to:
 
 ```javascript
-  <Text 
-    style={styles.header}
-  >Ha<Text style={defaultStyles.i}>pp</Text>y <Text style={defaultStyles.b}>Styling</Text>!
-  </Text>
+<Text style={styles.header}>
+  Ha<Text style={defaultStyles.i}>pp</Text>y{' '}
+  <Text style={defaultStyles.b}>Styling</Text>!
+</Text>
 ```
 
-So `StyledText` just provides a more compact, readable and flexible coding of nested `Text` components. 
-
+So `StyledText` just provides a more compact, readable and flexible coding of nested `Text` components.
 
 ## API
 
 In addition to the React Native `Text` properties, `StyledText` supports the following properties, with a restriction on the `children` proerty:
 
-| Name | Description |
-| ---- | ----------- |
-| children | String with style tags for mixed styling of the text. Each style tag must match one of the styles provided in textStyles or one of the default styles, see below. (Optional) |
-| textStyles | Object (e.g. `StyleSheet`) containing definition of the styles used in the provided text. (Optional) |
+| Name       | Description                                                                                                                                                                  |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| children   | String with style tags for mixed styling of the text. Each style tag must match one of the styles provided in textStyles or one of the default styles, see below. (Optional) |
+| textStyles | Object (e.g. `StyleSheet`) containing definition of the styles used in the provided text. (Optional)                                                                         |
 
 The following default styles are defined:
 
 | Name | Description |
 | ---- | ----------- |
-| b | **bold** |
-| i | *italic* |
-| u | underline |
-
-
+| b    | **bold**    |
+| i    | _italic_    |
+| u    | underline   |
 
 ### Contributors
+
 Bjørn Egil Hansen (@bjornegil)
 
 ### Sponsors
-[Fram X](https://framx.no) - a cross platform app company from Norway. 
+
+[Fram X](https://framx.no) - a cross platform app company from Norway.
