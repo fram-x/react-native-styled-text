@@ -1,3 +1,6 @@
+# Yarn
+yarn.lock
+
 # OSX
 #
 .DS_Store
@@ -58,3 +61,4 @@ buck-out/
 /.vscode/.react
 /lib/LICENSE
 /lib/README.md
+
