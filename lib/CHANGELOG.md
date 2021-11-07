@@ -1,3 +1,7 @@
+## 1.1.2
+
+- Fixed unnecessary version locks, i.e. removed yarn.lock from repository
+
 ## 1.1.1
 
 - Fixed version/release tag mismatch
