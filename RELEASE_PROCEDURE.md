@@ -8,6 +8,7 @@
 
 ### Bump version and publish
 
+- git checkout develop & git pull
 - Copy REAMD.md and LICENSE to ./lib folder
 - Run one of:
   - cd ./lib && npm version patch && cd .. && npm version patch && npm publish ./lib
