@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { StyleSheet, TextProps } from 'react-native';
+import React from 'react';
+import { StyleSheet, TextProps, TextStyle } from 'react-native';
 
 export interface Props extends TextProps {
     /**
@@ -23,6 +23,6 @@ export interface Props extends TextProps {
  * where the style tags must be either one of the predefined tags: `<b>`, `<i>` or `<u>`
  * or refer to custom styles defined in the textStyles property, e.g. `<demo>`
  */
-declare class StyledText extends React.PureComponent<Props> {}
+declare const StyledText: (props: Props) => React.ReactElement<any, any> | null;
 
 export default StyledText;
