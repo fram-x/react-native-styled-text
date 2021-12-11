@@ -1,3 +1,8 @@
+## 2.0.0
+
+- Converted to functional component and optimized to avoid unnecessary re-rendering
+- Hence, peer dependency on React 16.7.0 or newer
+
 ## 1.1.2
 
 - Fixed unnecessary version locks, i.e. removed yarn.lock from repository
