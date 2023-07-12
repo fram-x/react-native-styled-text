@@ -23,7 +23,8 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-project.xcworkspace
+ios/.xcode.env.local
+ios/Pods/
 
 # Android/IntelliJ
 #
@@ -32,6 +33,10 @@ build/
 .gradle
 local.properties
 *.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
 
 # node.js
 #
